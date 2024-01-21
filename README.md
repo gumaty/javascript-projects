@@ -1,1 +1,1 @@
-# "Oddaj rzeczy" application# javascript-projects
+# Javascript projects
