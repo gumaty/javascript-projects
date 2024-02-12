@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Walidator formularzy</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="validator.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<form>
+				<h1>Zarejestruj się!</h1>
+				<div class="form-box">
+					<label for="user">Nazwa użytkownika:</label>
+					<input type="text" id="user" placeholder="Podaj nazwę użytkownika" />
+					<p class="userText">Nazwa użytkownika składa się z min. 3 znaków</p>
+				</div>
+				<div class="form-box">
+					<label for="firstPassword">Hasło:</label>
+					<input type="password" id="firstPassword" placeholder="Podaj hasło" />
+					<p class="firstText">Hasło składa się z min. 8 znaków</p>
+				</div>
+				<div class="form-box">
+					<label for="secondPassword">Powtórz hasło:</label>
+					<input
+						type="password"
+						id="secondPassword"
+						placeholder="Powtórz hasło"
+					/>
+					<p class="secondText">Powtórz hasło</p>
+				</div>
+				<div class="form-box">
+					<label for="email">Adres email:</label>
+					<input type="email" id="email" placeholder="Podaj adres mailowy" />
+					<p class="emailText">Email jest niepoprawny</p>
+				</div>
+				<div class="btns">
+					<button class="btn">Wyczyść</button>
+					<button class="btn">Wyślij</button>
+				</div>
+			</form>
+		</div>
+		<script src="validator.js"></script>
+	</body>
+</html>
